@@ -1,0 +1,148 @@
+<!doctype html>
+<html class="no-js" lang=""> 
+    
+    <head> 
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+ 
+        <title>Wrong Way Airline</title>
+	 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="icon" href="img/WWlogo.png">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        
+        
+       <script type="text/javascript">
+            
+     
+      function validate()
+      {
+      
+         if( document.myFlight.origin.value == "selected" )
+         {
+            alert( "Please provide an origin location!" );
+            document.myFlight.origin.focus();
+            return false;
+         }
+         if( document.myFlight.destination.value == "selected" )
+         {
+            alert( "Please provide a destination location" );
+            document.myFlight.destination.focus();
+            return false;
+         }
+         return( true );
+      }
+  
+      </script>
+
+  </head>
+       <div id="wrapper">
+	<div id="header">
+	<div id="logo">
+     <div id = "lg"></div>
+		  <a href="index.html">
+		  <div id="name">Wrong Way</div></a>
+		
+		
+   
+		
+		</div>
+   
+		<div id="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+          <li><a href="flight.html">Flights</a></li>
+          <li><a href="track.html">Track</a></li>  
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+		</div>
+	</div>
+		
+	
+	<div id="contact">
+     <div id="grey">
+		<p>Select the origin and destination of your flight</p>
+		<form action = "testFlight.php" name = "myFlight" method = "POST" onsubmit="return(validate())">
+     
+			<div id="form-1">
+        <h5>Origin</h5>
+				<select name="origin" required="">
+        
+            <option value="selected" selected ><p> </p></option>
+            <option value="Atlanta"><p> Atlanta (ATL), USA </p></option>
+            <option value="Baltimore"><p> Baltimore (BWI), USA </p></option>
+            <option value="Boston"><p> Boston (BOS), USA </p></option>           
+            <option value="Chicago"><p> Chicago (MDW), USA </p></option>           
+            <option value="Detroit"><p> Detroit (DTW), USA </p></option>
+            <option value="Honolulu"><p> Honolulu (HNL), USA </p></option>
+            <option value="Houston"><p> Houston (HOU), USA </p></option>
+            <option value="Kansas"><p> Kansas (MCI), USA </p></option>
+            <option value="Las Vegas"><p> Las Vegas (LAS), USA </p></option>
+            <option value="Los Angeles"><p> Los Angeles (LAX), USA </p></option>
+            <option value="Miami"><p> Miami (MIA), USA </p></option>
+            <option value="New York"><p> New York (NYC), USA </p></option>
+            <option value="New Jersey"><p> New Jersey (EWR), USA </p></option>
+            <option value="Orlando"><p> Orlando (MCO), USA </p></option>
+            <option value="Sacramento"><p> Sacramento (SMF), USA </p></option>
+            <option value="San Diego"><p> San Diego (SAN), USA </p></option>
+            <option value="Seattle"><p> Seattle (SEA), USA </p></option>
+            <option value="South Carolina"><p> South Carolina, (CHS), USA </p></option>
+            <option value="Washington"><p> Washington, DC (PBI), USA </p></option>
+            
+            
+            
+			      
+            </select>
+			</div>
+
+			<div id="form">
+        <h5>Destination</h5>
+				<select name="destination" required="">
+        
+            <option value="selected" selected ><p>  </p></option>
+            <option value="Atlanta"><p> Atlanta (ATL), USA </p></option>
+            <option value="Baltimore"><p> Baltimore (BWI), USA </p></option>
+            <option value="Boston"><p> Boston (BOS), USA </p></option>           
+            <option value="Chicago"><p> Chicago (MDW), USA </p></option>           
+            <option value="Detroit"><p> Detroit (DTW), USA </p></option>
+            <option value="Honolulu"><p> Honolulu (HNL), USA </p></option>
+            <option value="Houston"><p> Houston (HOU), USA </p></option>
+            <option value="Kansas"><p> Kansas (MCI), USA </p></option>
+            <option value="Las Vegas"><p> Las Vegas (LAS), USA </p></option>
+            <option value="Los Angeles"><p> Los Angeles (LAX), USA </p></option>
+            <option value="Miami"><p> Miami (MIA), USA </p></option>
+            <option value="New York"><p> New York (NYC), USA </p></option>
+            <option value="New Jersey"><p> New Jersey (EWR), USA </p></option>
+            <option value="Orlando"><p> Orlando (MCO), USA </p></option>
+            <option value="Sacramento"><p> Sacramento (SMF), USA </p></option>
+            <option value="San Diego"><p> San Diego (SAN), USA </p></option>
+            <option value="Seattle"><p> Seattle (SEA), USA </p></option>
+            <option value="South Carolina"><p> South Carolina, (CHS), USA </p></option>
+            <option value="Washington"><p> Washington, DC (PBI), USA </p></option>
+			      
+            </select>
+			</div>
+			<div id="submit">
+				<input type="submit" name="submit"
+				value="Search">
+			</div>
+		</form>
+   </div>
+	</div>
+ 
+	<div id="footer">
+			<div id="footer-1">
+				<p>Copyright 2017 Wrong Way. All rights reserved.</p>
+	
+		
+		
+	</div>
+	</div>	
+        
+    </body>
+</html>
